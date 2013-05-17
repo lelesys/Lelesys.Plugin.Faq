@@ -1,0 +1,35 @@
+{namespace ts=TYPO3\TypoScript\ViewHelpers}
+{namespace t=TYPO3\Neos\ViewHelpers}
+<f:security.ifAccess resource="TYPO3_Neos_Backend_BackendController">
+	<f:then>
+		<t:contentElement node="{node}">
+			<div class="add-faq">
+				<h5><t:contentElement.editable property="question">{question -> f:format.raw()}</t:contentElement.editable></h5>
+				<div>
+					<t:contentElement.editable property="answer">{answer -> f:format.raw()}</t:contentElement.editable>
+				</div>
+			</div>
+		</t:contentElement>
+	</f:then>
+	<f:else>
+		<div class="faq-structure">
+			<div class="faq-heading">
+				<h5>{question}</h5>
+			</div>
+			<div class="faq-detail">
+				{answer -> f:format.raw()}<br>
+				<f:if condition="{node.properties.author}">
+					<f:then>
+						Author: {node.properties.author} |
+					</f:then>
+				</f:if>
+				<f:format.date format="F jS, Y">{node.properties.datePublished}</f:format.date> <br>
+				<f:if condition="{node.properties.relatedLinks}">
+					<f:then>
+						Related Link: <a href="{node.properties.relatedLinks}" target="_blank">{node.properties.relatedLinks}</a>
+					</f:then>
+				</f:if>
+			</div>
+		</div>
+	</f:else>
+</f:security.ifAccess>

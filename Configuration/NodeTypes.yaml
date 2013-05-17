@@ -1,0 +1,38 @@
+'Lelesys.Plugin.NodeTypes:Faq':
+  superTypes: ['TYPO3.Neos.NodeTypes:Text']
+  ui:
+    label: 'Lelesys Faq'
+    group: 'Plugins'
+    icon:
+      light: 'Images/Icons/White/notepad_2_icon-16.png'
+      dark: 'Images/Icons/Black/notepad_2_icon-16.png'
+    inspector:
+      groups:
+        page:
+          label: 'Faq'
+  properties:
+    question:
+      type: string
+      defaultValue: 'Enter question here ?'
+    answer:
+      type: string
+      defaultValue: 'Enter answer here'
+    datePublished:
+      type: 'date'
+      ui:
+        label: 'Publication Date'
+        reloadIfChanged: true
+        inspector:
+          group: 'page'
+    author:
+      type: 'string'
+      ui:
+        label: 'Author'
+        inspector:
+          group: 'page'
+    relatedLinks:
+      type: 'string'
+      ui:
+        label: 'Related Link'
+        inspector:
+          group: 'page'

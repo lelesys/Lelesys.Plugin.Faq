@@ -1,0 +1,6 @@
+prototype(Lelesys.Plugin.NodeTypes:Faq) < prototype(TYPO3.Neos.NodeTypes:Text)
+prototype(Lelesys.Plugin.NodeTypes:Faq) {
+	templatePath = 'resource://Lelesys.Plugin.Faq/Private/Templates/TypoScript/Faq.html'
+	question = ${q(node).property('question')}
+	answer = ${q(node).property('answer')}
+}
