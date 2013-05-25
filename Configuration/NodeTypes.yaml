@@ -1,15 +1,17 @@
+
 'Lelesys.Plugin.NodeTypes:Faq':
-  superTypes: ['TYPO3.Neos.NodeTypes:Text']
+  superTypes:
+    - 'TYPO3.Neos.NodeTypes:Text'
   ui:
     label: 'Lelesys Faq'
-    group: 'Plugins'
+    group: Plugins
     icon:
-      light: 'Images/Icons/White/notepad_2_icon-16.png'
-      dark: 'Images/Icons/Black/notepad_2_icon-16.png'
+      light: Images/Icons/White/notepad_2_icon-16.png
+      dark: Images/Icons/Black/notepad_2_icon-16.png
     inspector:
       groups:
         page:
-          label: 'Faq'
+          label: Faq
   properties:
     question:
       type: string
@@ -18,21 +20,21 @@
       type: string
       defaultValue: 'Enter answer here'
     datePublished:
-      type: 'date'
+      type: date
       ui:
         label: 'Publication Date'
         reloadIfChanged: true
         inspector:
-          group: 'page'
+          group: page
     author:
-      type: 'string'
+      type: string
       ui:
-        label: 'Author'
+        label: Author
         inspector:
-          group: 'page'
+          group: page
     relatedLinks:
-      type: 'string'
+      type: string
       ui:
         label: 'Related Link'
         inspector:
-          group: 'page'
+          group: page
