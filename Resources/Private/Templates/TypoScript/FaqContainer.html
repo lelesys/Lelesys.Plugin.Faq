@@ -1,0 +1,12 @@
+{namespace ts=TYPO3\TypoScript\ViewHelpers}
+{namespace t=TYPO3\Neos\ViewHelpers}
+<f:security.ifAccess resource="TYPO3_Neos_Backend_BackendController">
+	<f:then>
+		<t:contentElement node="{node}">
+			<ts:render path="faqContainerItemCollection" />
+		</t:contentElement>
+	</f:then>
+	<f:else>
+		<ts:render path="faqContainerItemCollection" />
+	</f:else>
+</f:security.ifAccess>

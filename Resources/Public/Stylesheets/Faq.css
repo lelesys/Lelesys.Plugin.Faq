@@ -1,3 +1,5 @@
+/*****This css is for faq item******/
+
 .faq-structure {
 	border-bottom: 1px dotted;
 }
@@ -22,4 +24,28 @@
 	float: left;
 	height: 18px;
 	width: 22px;
+}
+
+/*****This css is for faq category******/
+
+.faq-category-plus-icon {
+	background-image: url('../Images/glyphicons-halflings.png');
+	background-position: -456px -70px;
+	background-repeat: no-repeat;
+	float: left;
+	height: 18px;
+	width: 22px;
+}
+
+.faq-category-minus-icon {
+	background-image: url('../Images/glyphicons-halflings.png');
+	background-position: -313px -117px;
+	background-repeat: no-repeat;
+	float: left;
+	height: 18px;
+	width: 22px;
+}
+
+.faq-category-detail {
+	margin-left: 22px;
 }

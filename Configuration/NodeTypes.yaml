@@ -1,3 +1,34 @@
+'Lelesys.Plugin.NodeTypes:FaqContainer':
+  superTypes:
+    - 'TYPO3.Neos:Content'
+  ui:
+    label: 'Lelesys Faq Container'
+    group: Plugins
+    icon:
+      light: Images/Icons/White/columns_icon-16.png
+      dark: Images/Icons/Black/columns_icon-16.png
+  childNodes:
+    faqContainer:
+      type: 'TYPO3.Neos:ContentCollection'
+
+'Lelesys.Plugin.NodeTypes:FaqCategory':
+  superTypes:
+    - 'TYPO3.Neos:Content'
+  ui:
+    label: 'Lelesys Faq Category'
+    group: Plugins
+    icon:
+      light: Images/Icons/White/columns_icon-16.png
+      dark: Images/Icons/Black/columns_icon-16.png
+  properties:
+    category:
+      type: string
+      defaultValue: 'Enter Category Title'
+      ui:
+        inlineEditable: TRUE
+  childNodes:
+    faqCategory:
+      type: 'TYPO3.Neos:ContentCollection'
 
 'Lelesys.Plugin.NodeTypes:Faq':
   superTypes:
@@ -23,7 +54,6 @@
       type: date
       ui:
         label: 'Publication Date'
-        reloadIfChanged: true
         inspector:
           group: page
     author:
