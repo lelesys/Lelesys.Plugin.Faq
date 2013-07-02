@@ -23,7 +23,7 @@ Quick start
 * add the plugin content element "Lelesys Faq" under "Lelesys Faq Category".
 
 Note: This will add a simple Faq Plugin to your site.
-If u want a Faq with toogle effect than u just have to add javascript to your own one's where you add other javascripts of the site.
+If you want a Faq with toogle effect than you just have to add javascript to your own one's where you add other javascripts of the site.
 
 ```<script src="{f:uri.resource(path: 'resource://Lelesys.Plugin.Faq/Public/JavaScript/Faq.js')}"></script>
 ```
