@@ -4,6 +4,7 @@
   ui:
     label: 'Lelesys Faq Container'
     group: Plugins
+    inlineEditable: true
     icon:
       light: Images/Icons/White/columns_icon-16.png
       dark: Images/Icons/Black/columns_icon-16.png
@@ -17,6 +18,7 @@
   ui:
     label: 'Lelesys Faq Category'
     group: Plugins
+    inlineEditable: true
     icon:
       light: Images/Icons/White/columns_icon-16.png
       dark: Images/Icons/Black/columns_icon-16.png
