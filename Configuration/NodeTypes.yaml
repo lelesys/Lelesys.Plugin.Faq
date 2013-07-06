@@ -5,9 +5,7 @@
     label: 'Lelesys Faq Container'
     group: Plugins
     inlineEditable: true
-    icon:
-      light: Images/Icons/White/columns_icon-16.png
-      dark: Images/Icons/Black/columns_icon-16.png
+    icon: 'icon-puzzle-piece'
   childNodes:
     faqContainer:
       type: 'TYPO3.Neos:ContentCollection'
@@ -19,9 +17,7 @@
     label: 'Lelesys Faq Category'
     group: Plugins
     inlineEditable: true
-    icon:
-      light: Images/Icons/White/columns_icon-16.png
-      dark: Images/Icons/Black/columns_icon-16.png
+    icon: 'icon-puzzle-piece'
   properties:
     category:
       type: string
@@ -38,9 +34,7 @@
   ui:
     label: 'Lelesys Faq'
     group: Plugins
-    icon:
-      light: Images/Icons/White/notepad_2_icon-16.png
-      dark: Images/Icons/Black/notepad_2_icon-16.png
+    icon: 'icon-puzzle-piece'
     inspector:
       groups:
         page:
