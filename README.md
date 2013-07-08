@@ -1,12 +1,14 @@
 Lelesys Faq Plugin
 ======================
 
-This plugin adds faq to TYPO3 Neos websites.
+This plugin adds faq to your websites.
+
+Warning: This plugin is experimental.
 
 Quick start
 ---------
 
-* include the plugin's TypoScript definitions to your own one's (located in, for example, `Packages/Sites/Your.Site/Resources/Private/TypoScripts/Library/ContentElements.ts2`, with:
+* include the plugin's TypoScript definitions to your own one's (located in, for example, `Packages/Sites/Your.Site/Resources/Private/TypoScripts/Library/ContentElements.ts2`) with:
 
 ```include: resource://Lelesys.Plugin.Faq/Private/TypoScripts/Library/NodeTypes.ts2
 ```
