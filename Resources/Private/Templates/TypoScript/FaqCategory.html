@@ -1,20 +1,20 @@
 {namespace ts=TYPO3\TypoScript\ViewHelpers}
-{namespace t=TYPO3\Neos\ViewHelpers}
+{namespace neos=TYPO3\Neos\ViewHelpers}
 <f:security.ifAccess resource="TYPO3_Neos_Backend_BackendController">
 	<f:then>
-		<t:contentElement node="{node}">
+		<neos:contentElement node="{node}">
 			<div class="add-faq">
-				<h4><t:contentElement.editable property="category">{category -> f:format.raw()}</t:contentElement.editable></h4>
+				<h4><neos:contentElement.editable property="title">{title -> f:format.raw()}</neos:contentElement.editable></h4>
 				<div>
 					<ts:render path="faqCategoryItemCollection" />
 				</div>
 			</div>
-		</t:contentElement>
+		</neos:contentElement>
 	</f:then>
 	<f:else>
 		<div class="faq-category-structure">
 			<div class="faq-category-heading">
-				<h4>{category}</h4>
+				<h4>{title}</h4>
 			</div>
 			<div class="faq-category-detail">
 				<ts:render path="faqCategoryItemCollection" />

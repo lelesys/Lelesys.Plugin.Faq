@@ -1,15 +1,15 @@
 {namespace ts=TYPO3\TypoScript\ViewHelpers}
-{namespace t=TYPO3\Neos\ViewHelpers}
+{namespace neos=TYPO3\Neos\ViewHelpers}
 <f:security.ifAccess resource="TYPO3_Neos_Backend_BackendController">
 	<f:then>
-		<t:contentElement node="{node}">
+		<neos:contentElement node="{node}">
 			<div class="add-faq">
-				<h5><t:contentElement.editable property="question">{question -> f:format.raw()}</t:contentElement.editable></h5>
+				<h5><neos:contentElement.editable property="question">{question -> f:format.raw()}</neos:contentElement.editable></h5>
 				<div>
-					<t:contentElement.editable property="answer">{answer -> f:format.raw()}</t:contentElement.editable>
+					<neos:contentElement.editable property="answer">{answer -> f:format.raw()}</neos:contentElement.editable>
 				</div>
 			</div>
-		</t:contentElement>
+		</neos:contentElement>
 	</f:then>
 	<f:else>
 		<div class="faq-structure">

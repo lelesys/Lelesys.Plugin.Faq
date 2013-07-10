@@ -1,28 +1,26 @@
-prototype(Lelesys.Plugin.NodeTypes:FaqContainer) < prototype(TYPO3.Neos:Template)
-prototype(Lelesys.Plugin.NodeTypes:FaqContainer) {
+prototype(Lelesys.Plugin.Faq:Container) < prototype(TYPO3.Neos:Template)
+prototype(Lelesys.Plugin.Faq:Container) {
 	templatePath = 'resource://Lelesys.Plugin.Faq/Private/Templates/TypoScript/FaqContainer.html'
-	faqContainerCollection = ${q(node).children('faqContainer').children()}
+
 	faqContainerItemCollection = TYPO3.Neos:ContentCollection
 	faqContainerItemCollection {
-		nodePath = 'faqContainer'
-		collection = ${q(node).children()}
+		nodePath = 'items'
 	}
 }
 
-prototype(Lelesys.Plugin.NodeTypes:FaqCategory) < prototype(TYPO3.Neos:Template)
-prototype(Lelesys.Plugin.NodeTypes:FaqCategory) {
+prototype(Lelesys.Plugin.Faq:Category) < prototype(TYPO3.Neos:Template)
+prototype(Lelesys.Plugin.Faq:Category) {
 	templatePath = 'resource://Lelesys.Plugin.Faq/Private/Templates/TypoScript/FaqCategory.html'
-	category = ${q(node).property('category')}
-	faqCategoryCollection = ${q(node).children('faqCategory').children()}
+	title = ${q(node).property('title')}
+
 	faqCategoryItemCollection = TYPO3.Neos:ContentCollection
 	faqCategoryItemCollection {
-		nodePath = 'faqCategory'
-		collection = ${q(node).children()}
+		nodePath = 'items'
 	}
 }
 
-prototype(Lelesys.Plugin.NodeTypes:Faq) < prototype(TYPO3.Neos.NodeTypes:Text)
-prototype(Lelesys.Plugin.NodeTypes:Faq) {
+prototype(Lelesys.Plugin.Faq:Question) < prototype(TYPO3.Neos:Template)
+prototype(Lelesys.Plugin.Faq:Question) {
 	templatePath = 'resource://Lelesys.Plugin.Faq/Private/Templates/TypoScript/Faq.html'
 	question = ${q(node).property('question')}
 	answer = ${q(node).property('answer')}

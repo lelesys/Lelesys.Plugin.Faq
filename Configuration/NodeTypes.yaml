@@ -1,40 +1,40 @@
-'Lelesys.Plugin.NodeTypes:FaqContainer':
+'Lelesys.Plugin.Faq:Container':
   superTypes:
     - 'TYPO3.Neos:Content'
   ui:
-    label: 'Lelesys Faq Container'
-    group: Plugins
+    label: 'Faq Container'
+    group: Structure
     inlineEditable: true
-    icon: 'icon-puzzle-piece'
+    icon: 'icon-list'
   childNodes:
-    faqContainer:
+    items:
       type: 'TYPO3.Neos:ContentCollection'
 
-'Lelesys.Plugin.NodeTypes:FaqCategory':
+'Lelesys.Plugin.Faq:Category':
   superTypes:
     - 'TYPO3.Neos:Content'
   ui:
-    label: 'Lelesys Faq Category'
-    group: Plugins
+    label: 'Faq Category'
+    group: Structure
     inlineEditable: true
-    icon: 'icon-puzzle-piece'
+    icon: 'icon-tag'
   properties:
-    category:
+    title:
       type: string
       defaultValue: 'Enter Category Title'
       ui:
         inlineEditable: TRUE
   childNodes:
-    faqCategory:
+    items:
       type: 'TYPO3.Neos:ContentCollection'
 
-'Lelesys.Plugin.NodeTypes:Faq':
+'Lelesys.Plugin.Faq:Question':
   superTypes:
-    - 'TYPO3.Neos.NodeTypes:Text'
+    - 'TYPO3.Neos:Content'
   ui:
-    label: 'Lelesys Faq'
-    group: Plugins
-    icon: 'icon-puzzle-piece'
+    label: 'Faq'
+    group: Structure
+    icon: 'icon-question-sign'
     inspector:
       groups:
         page:
@@ -42,10 +42,14 @@
   properties:
     question:
       type: string
-      defaultValue: 'Enter question here ?'
+      defaultValue: 'Enter question here'
+      ui:
+        inlineEditable: TRUE
     answer:
       type: string
       defaultValue: 'Enter answer here'
+      ui:
+        inlineEditable: TRUE
     datePublished:
       type: date
       ui:
@@ -55,7 +59,7 @@
     author:
       type: string
       ui:
-        label: Author
+        label: 'Author'
         inspector:
           group: page
     relatedLinks:
