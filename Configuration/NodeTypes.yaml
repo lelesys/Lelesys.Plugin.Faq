@@ -21,6 +21,7 @@
   properties:
     title:
       type: string
+      translatable: TRUE
       defaultValue: 'Enter Category Title'
       ui:
         inlineEditable: TRUE
@@ -42,11 +43,13 @@
   properties:
     question:
       type: string
+      translatable: TRUE
       defaultValue: 'Enter question here'
       ui:
         inlineEditable: TRUE
     answer:
       type: string
+      translatable: TRUE
       defaultValue: 'Enter answer here'
       ui:
         inlineEditable: TRUE
