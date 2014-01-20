@@ -1,4 +1,4 @@
-prototype(Lelesys.Plugin.Faq:Container) < prototype(TYPO3.Neos:Template)
+prototype(Lelesys.Plugin.Faq:Container) < prototype(TYPO3.Neos:Content)
 prototype(Lelesys.Plugin.Faq:Container) {
 	templatePath = 'resource://Lelesys.Plugin.Faq/Private/Templates/TypoScript/FaqContainer.html'
 
@@ -8,7 +8,7 @@ prototype(Lelesys.Plugin.Faq:Container) {
 	}
 }
 
-prototype(Lelesys.Plugin.Faq:Category) < prototype(TYPO3.Neos:Template)
+prototype(Lelesys.Plugin.Faq:Category) < prototype(TYPO3.Neos:Content)
 prototype(Lelesys.Plugin.Faq:Category) {
 	templatePath = 'resource://Lelesys.Plugin.Faq/Private/Templates/TypoScript/FaqCategory.html'
 	title = ${q(node).property('title')}
@@ -19,7 +19,7 @@ prototype(Lelesys.Plugin.Faq:Category) {
 	}
 }
 
-prototype(Lelesys.Plugin.Faq:Question) < prototype(TYPO3.Neos:Template)
+prototype(Lelesys.Plugin.Faq:Question) < prototype(TYPO3.Neos:Content)
 prototype(Lelesys.Plugin.Faq:Question) {
 	templatePath = 'resource://Lelesys.Plugin.Faq/Private/Templates/TypoScript/Faq.html'
 	question = ${q(node).property('question')}

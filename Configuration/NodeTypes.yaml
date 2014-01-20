@@ -3,8 +3,8 @@
     - 'TYPO3.Neos:Content'
   ui:
     label: 'Faq Container'
-    group: Structure
-    inlineEditable: true
+    group: structure
+    inlineEditable: TRUE
     icon: 'icon-list'
   childNodes:
     items:
@@ -15,8 +15,8 @@
     - 'TYPO3.Neos:Content'
   ui:
     label: 'Faq Category'
-    group: Structure
-    inlineEditable: true
+    group: structure
+    inlineEditable: TRUE
     icon: 'icon-tag'
   properties:
     title:
@@ -34,7 +34,7 @@
     - 'TYPO3.Neos:Content'
   ui:
     label: 'Faq'
-    group: Structure
+    group: structure
     icon: 'icon-question-sign'
     inspector:
       groups:
