@@ -12,7 +12,7 @@
 	<f:else>
 		<div class="faq-category-structure">
 			<div class="faq-category-heading">
-				<h4>{title}</h4>
+				<h4>{title -> f:format.stripTags()}</h4>
 			</div>
 			<div class="faq-category-detail">
 				<ts:render path="faqCategoryItemCollection" />

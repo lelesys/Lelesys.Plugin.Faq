@@ -12,7 +12,7 @@
 	<f:else>
 		<div class="faq-structure">
 			<div class="faq-heading">
-				<h5>{question}</h5>
+				<h5>{question -> f:format.stripTags()}</h5>
 			</div>
 			<div class="faq-detail">
 				{answer -> f:format.raw()}<br>
