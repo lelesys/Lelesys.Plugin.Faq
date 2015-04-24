@@ -1,33 +1,21 @@
 {namespace ts=TYPO3\TypoScript\ViewHelpers}
 {namespace neos=TYPO3\Neos\ViewHelpers}
-<f:security.ifAccess resource="TYPO3_Neos_Backend_GeneralAccess">
-	<f:then>
-		<div class="add-faq">
-			<neos:contentElement.editable property="question" tag="h5" />
-			<div>
-				<neos:contentElement.editable property="answer">{answer -> f:format.raw()}</neos:contentElement.editable>
-			</div>
-		</div>
-	</f:then>
-	<f:else>
-		<div class="faq-structure">
-			<div class="faq-heading">
-				<h5>{question -> f:format.stripTags()}</h5>
-			</div>
-			<div class="faq-detail">
-				{answer -> f:format.raw()}<br>
-				<f:if condition="{node.properties.author}">
-					<f:then>
-						Author: {node.properties.author} |
-					</f:then>
-				</f:if>
-				<f:format.date format="F jS, Y">{node.properties.datePublished}</f:format.date> <br>
-				<f:if condition="{node.properties.relatedLinks}">
-					<f:then>
-						Related Link: <a href="{node.properties.relatedLinks}" target="_blank">{node.properties.relatedLinks}</a>
-					</f:then>
-				</f:if>
-			</div>
-		</div>
-	</f:else>
-</f:security.ifAccess>
+<div class="faq-structure">
+    <div class="faq-heading">
+        <neos:contentElement.editable property="question" tag="h5" />
+    </div>
+    <div class="faq-detail">
+        <neos:contentElement.editable property="answer">{answer -> f:format.raw()}</neos:contentElement.editable><br>
+        <f:if condition="{node.properties.author}">
+            <f:then>
+                Author: {node.properties.author} |
+            </f:then>
+        </f:if>
+        <f:format.date format="F jS, Y">{node.properties.datePublished}</f:format.date> <br>
+        <f:if condition="{node.properties.relatedLinks}">
+            <f:then>
+                Related Link: <a href="{node.properties.relatedLinks}" target="_blank">{node.properties.relatedLinks}</a>
+            </f:then>
+        </f:if>
+    </div>
+</div>
