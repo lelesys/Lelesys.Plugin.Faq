@@ -11,7 +11,7 @@ Quick start
 * include the plugin's Stylesheet to your own one's where you add other stylesheets of the site.
 
 ```
-<link href="{f:uri.resource(path: 'resource://Lelesys.Plugin.Faq/Public/Stylesheets/Faq.css')}" rel="stylesheet" media="screen">
+<link href="{f:uri.resource(path: 'Stylesheets/Faq.css', package: 'Lelesys.Plugin.Faq')}" rel="stylesheet" media="screen">
 ```
 
 * add the plugin content element "Lelesys Faq Container" to the position of your choice.
@@ -23,4 +23,4 @@ Quick start
 Note: This will add a simple Faq Plugin to your site.
 If you want a Faq with toogle effect than you just have to add javascript to your own one's where you add other javascripts of the site.
 
-```<script src="{f:uri.resource(path: 'resource://Lelesys.Plugin.Faq/Public/JavaScript/Faq.js')}"></script>```
+```<script src="{f:uri.resource(path: 'JavaScript/Faq.js', package: 'Lelesys.Plugin.Faq')}"></script>```

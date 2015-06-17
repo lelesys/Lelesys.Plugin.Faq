@@ -59,8 +59,6 @@
         label: 'Publication Date'
         inspector:
           group: page
-          editorOptions:
-            format: 'd-m-Y H:i'
     author:
       type: string
       ui:
