@@ -2,7 +2,7 @@
 	"name": "lelesys/plugin-faq",
 	"description": "A faq plugin for TYPO3 Neos",
 	"license": "LGPL-3.0+",
-	"type":"typo3-flow-plugin",
+	"type":"neos-plugin",
 	"authors": [
 		{
 			"name": "Lelesys Infotech Pvt Ltd, India",
@@ -11,7 +11,7 @@
 		}
 	],
 	"require": {
-		"typo3/neos":"dev-master"
+		"neos/neos":"*"
 	},
 	"autoload":{
 		"psr-0":{

@@ -1,6 +1,6 @@
 'Lelesys.Plugin.Faq:Container':
   superTypes:
-    - 'TYPO3.Neos:Content'
+    'Neos.Neos:Content': true
   ui:
     label: 'Faq Container'
     group: structure
@@ -8,11 +8,11 @@
     icon: 'icon-list'
   childNodes:
     items:
-      type: 'TYPO3.Neos:ContentCollection'
+      type: 'Neos.Neos:ContentCollection'
 
 'Lelesys.Plugin.Faq:Category':
   superTypes:
-    - 'TYPO3.Neos:Content'
+    'Neos.Neos:Content': true
   ui:
     label: 'Faq Category'
     group: structure
@@ -27,11 +27,11 @@
         inlineEditable: TRUE
   childNodes:
     items:
-      type: 'TYPO3.Neos:ContentCollection'
+      type: 'Neos.Neos:ContentCollection'
 
 'Lelesys.Plugin.Faq:Question':
   superTypes:
-    - 'TYPO3.Neos:Content'
+    'Neos.Neos:Content': true
   ui:
     label: 'Faq'
     group: structure
